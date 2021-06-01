@@ -70,7 +70,7 @@ class Utility {
             val root: String = Environment.getExternalStorageDirectory().toString()
             val myDir = File("$root/AndroidViewToImageAndPDF")
             myDir.mkdirs()
-            return File(myDir, "${UUID.randomUUID()}." + if (isImage) "jpg" else "pdf");
+            return File(myDir, "${UUID.randomUUID()}." + if (isImage) "jpg" else "pdf")
         }
 
     }

@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             R.id.action_export_as_pdf -> {
-
                 val inflater =
                     this.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
                 val root = inflater.inflate(R.layout.activity_main, null)
@@ -42,7 +41,6 @@ class MainActivity : AppCompatActivity() {
                     this.window.findViewById(R.id.container)
                 )
                 savePDF(screen!!)
-//                savePDF(getBitmapFromView(container)!!)
                 Toast.makeText(this, "PDF successfully saved.", LENGTH_SHORT).show()
                 true
             }
